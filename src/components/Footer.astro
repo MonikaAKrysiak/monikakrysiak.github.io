@@ -88,10 +88,12 @@ const currentYear = new Date().getFullYear();
                 content.hidden = true;
                 trigger.setAttribute("aria-expanded", "false");
             };
+            const canHover = window.matchMedia("(hover: hover)").matches;
 
-            trigger.addEventListener("mouseenter", open);
-            trigger.addEventListener("focus", open);
-
+            if (canHover) {
+                trigger.addEventListener("mouseenter", open);
+            }
+            
             disclosure.addEventListener("mouseleave", close);
 
             trigger.addEventListener("click", () => {
