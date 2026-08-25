@@ -1796,6 +1796,15 @@ body {
 	.site-footer dl > div {
 		display: block;
 	}
+
+	.ai-disclosure-content {
+		position: fixed;
+		left: var(--space-md);
+		right: var(--space-md);
+		bottom: calc(var(--space-md) + 3rem);
+
+		width: auto;
+	}
 }
 
 /* Reduced motion */
