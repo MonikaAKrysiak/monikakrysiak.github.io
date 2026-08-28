@@ -1,83 +1,194 @@
 ---
 import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
 import type { KnowledgeSharingEvidenceItem } from "../data/case-studies/knowledge-sharing";
+import { formatTypography } from "../utils/typography";
+import type { Language } from "../i18n";
 
 interface Props {
     evidence: KnowledgeSharingEvidenceItem[];
     label: string;
+    previewImage?: ImageMetadata;
+    previewAlt?: string;
+    previewDescription?: string;
+    collapseLabel: string;
+    lang: Language;
 }
 
-const { evidence, label }: Props = Astro.props;
+const {
+    evidence,
+    label,
+    previewImage,
+    previewAlt,
+    previewDescription,
+    collapseLabel,
+    lang,
+}: Props = Astro.props;
 ---
+{
+    previewImage && previewAlt && (
+        <Image
+            class="knowledge-sharing-evidence-preview"
+            src={previewImage}
+            alt={previewAlt}
+        />
+    )
+}
+{
+    previewDescription && (
+        <p class="case-study-text knowledge-sharing-evidence-preview-description">
+            {formatTypography(previewDescription, lang)}
+        </p>
+    )
+}
+{
+    evidence.length > 0 && (
+        <details class="knowledge-sharing-evidence-details">
+            <summary class="knowledge-sharing-evidence-summary">
+                {label}
+            </summary>
 
-<details class="knowledge-sharing-evidence-details">
-    <summary class="knowledge-sharing-evidence-summary">
-        {label}
-    </summary>
+            <div class="knowledge-sharing-evidence-list">
+                {
+                    evidence.map((item) => (
+                        <section
+                            class:list={[
+                                "knowledge-sharing-evidence-item",
+                                item.layout === "academic" &&
+                                    "knowledge-sharing-evidence-item-academic",
+                            ]}
+                        >
+                            <h4 class="knowledge-sharing-evidence-title">
+                                {formatTypography(item.title, lang)}
+                            </h4>
 
-    <div class="knowledge-sharing-evidence-list">
-        {
-            evidence.map((item) => (
-                <section class="knowledge-sharing-evidence-item">
-                    <h4 class="knowledge-sharing-evidence-title">
-                        {item.title}
-                    </h4>
+                            {item.layout === "academic" &&
+                                item.image &&
+                                item.alt &&
+                                item.secondaryImage &&
+                                item.secondaryImageAlt ? (
+                                    <div class="knowledge-sharing-evidence-media">
+                                        <Image
+                                            class="knowledge-sharing-evidence-image"
+                                            src={item.image}
+                                            alt={item.alt}
+                                        />
 
-                    {item.image && item.alt && (
-                        <Image
-                            class="knowledge-sharing-evidence-image"
-                            src={item.image}
-                            alt={item.alt}
-                        />
-                    )}
+                                        <Image
+                                            class="knowledge-sharing-evidence-secondary-image"
+                                            src={item.secondaryImage}
+                                            alt={item.secondaryImageAlt}
+                                        />
+                                    </div>
+                                ) : (
+                                    item.image &&
+                                    item.alt && (
+                                        <Image
+                                            class="knowledge-sharing-evidence-image"
+                                            src={item.image}
+                                            alt={item.alt}
+                                        />
+                                    )
+                                )}
+                            <div class="knowledge-sharing-evidence-content">
+                                <p class="case-study-text knowledge-sharing-evidence-description">
+                                    {formatTypography(item.description, lang)}
+                                </p>
 
-                    <p class="case-study-text knowledge-sharing-evidence-description">
-                        {item.description}
-                    </p>
+                                {item.linksAfterDescription &&
+                                    item.links &&
+                                    item.links.length > 0 && (
+                                        <ul class="knowledge-sharing-evidence-links">
+                                            {item.links.map((link) => (
+                                                <li>
+                                                    <a
+                                                        href={link.href}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        {link.label}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                            </div>
 
-                    <div class="knowledge-sharing-evidence-side">
-                        {item.secondaryImage && item.secondaryImageAlt && (
-                            <Image
-                                class:list={[
-                                    "knowledge-sharing-evidence-secondary-image",
-                                    item.secondaryImageLarge &&
-                                        "knowledge-sharing-evidence-secondary-image-large",
-                                ]}
-                                src={item.secondaryImage}
-                                alt={item.secondaryImageAlt}
-                            />
-                        )}
+                            <div class="knowledge-sharing-evidence-side">
+                                {item.layout !== "academic" &&
+                                    item.secondaryImage &&
+                                    item.secondaryImageAlt && (
+                                        <Image
+                                            class:list={[
+                                                "knowledge-sharing-evidence-secondary-image",
+                                                item.secondaryImageLarge &&
+                                                    "knowledge-sharing-evidence-secondary-image-large",
+                                            ]}
+                                            src={item.secondaryImage}
+                                            alt={item.secondaryImageAlt}
+                                        />
+                                    )}
 
-                        {item.videoSrc && (
-                            <video
-                                class="knowledge-sharing-evidence-video"
-                                controls
-                                preload="metadata"
-                                playsinline
-                            >
-                                <source src={item.videoSrc} type="video/mp4" />
-                            </video>
-                        )}
+                                {item.videoSrc && (
+                                    <video
+                                        class="knowledge-sharing-evidence-video"
+                                        controls
+                                        preload="metadata"
+                                        playsinline
+                                    >
+                                        <source
+                                            src={item.videoSrc}
+                                            type="video/mp4"
+                                        />
+                                    </video>
+                                )}
+                                {!item.linksAfterDescription &&
+                                    item.links &&
+                                    item.links.length > 0 && (
+                                        <ul class="knowledge-sharing-evidence-links">
+                                            {item.links.map((link) => (
+                                                <li>
+                                                    <a
+                                                        href={link.href}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        {link.label}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                            </div>
+                        </section>
+                    ))
+                }
+            </div>
+            <button
+                type="button"
+                class="knowledge-sharing-evidence-collapse"
+                data-evidence-collapse
+            >
+                <span aria-hidden="true">▲</span>
+                {collapseLabel}
+            </button>
+        </details>
+    )
+}
+<script>
+    document
+        .querySelectorAll<HTMLButtonElement>("[data-evidence-collapse]")
+        .forEach((button) => {
+            button.addEventListener("click", () => {
+                const details = button.closest("details");
 
-                        {item.links && item.links.length > 0 && (
-                            <ul class="knowledge-sharing-evidence-links">
-                                {item.links.map((link) => (
-                                    <li>
-                                        <a
-                                            href={link.href}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            {link.label}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-                    </div>
-                </section>
-            ))
-        }
-    </div>
-</details>
+                if (!details) return;
+
+                const summary = details.querySelector("summary");
+
+                details.open = false;
+                summary?.focus();
+            });
+        });
+</script>
