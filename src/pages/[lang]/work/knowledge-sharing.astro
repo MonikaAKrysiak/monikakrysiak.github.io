@@ -217,16 +217,25 @@ const seo = getKnowledgeSharingSeo(language);
                             </dl>
                         </aside>
 
-                        {example.evidence && (
-                            <KnowledgeSharingEvidenceDetails
-                                evidence={example.evidence}
-                                label={
-                                    language === "pl"
-                                        ? "Pokaż materiały"
-                                        : "View materials"
-                                }
-                            />
-                        )}
+                        <KnowledgeSharingEvidenceDetails
+                            evidence={example.evidence ?? []}
+                            label={
+                                example.evidenceLabel ??
+                                (language === "pl"
+                                    ? "Pokaż materiały"
+                                    : "View materials")
+                            }
+                            previewImage={example.previewImage}
+                            previewAlt={example.previewAlt}
+                            previewDescription={example.previewDescription}
+                            collapseLabel={
+                                example.evidenceCollapseLabel ??
+                                (language === "pl"
+                                    ? "Ukryj materiały"
+                                    : "Hide materials")
+                            }
+                            lang={language}
+                        />
                     </article>
                 ))
             }

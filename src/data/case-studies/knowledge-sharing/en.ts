@@ -150,6 +150,86 @@ export const knowledgeSharing = {
 						value: "Security and quality in practice",
 					},
 				],
+				previewDescription: "A selection from a broader academic and professional publication record.",
+				previewImage: knowledgeSharingEvidence.publications.overviewImage,
+				previewAlt: "A selection of physical academic and professional publications authored and co-authored by me.",
+				evidenceLabel: "View selected publications",
+				evidenceCollapseLabel: "Hide selected publications",
+
+				evidence: [
+					{
+						title: "Zastosowanie ontologii w budowie semantycznego Internetu oraz modelowaniu wiedzy o organizacji",
+						description:
+							"My first academic publication, developed from my bachelor's thesis and co-authored with Dr Mariusz Żytniewski. It focused on the use of ontologies in the semantic web and organisational knowledge modelling.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "View publication in BazEkon",
+								href: "https://bazekon.icm.edu.pl/bazekon/element/bwmeta1.element.ekon-element-000171395895",
+							},
+						],
+					},
+					{
+						title: "Wpływ zastosowań nowoczesnych technologii na atrakcyjność i popularność muzeów w Polsce",
+						description:
+							"A publication co-authored with Szymon Głowania exploring how modern technologies, including virtual experiences and online communication, can influence the attractiveness and popularity of museums.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "View publication in BazEkon",
+								href: "https://bazekon.icm.edu.pl/bazekon/element/bwmeta1.element.ekon-element-000171495190",
+							},
+						],
+					},
+					{
+						title: "Metodyki zarządzania projektami IT i ich ryzykiem: przegląd i wykorzystanie",
+						description:
+							"A study co-authored with Szymon Głowania examining approaches to IT project management and methods used to manage project risk.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Read publication",
+								href: "https://bibliotekanauki.pl/articles/591893.pdf",
+							},
+						],
+					},
+					{
+						title: "The Cyber Threats Analysis for Web Applications Security in Industry 4.0",
+						description:
+							"A research publication co-authored with Prof. UE Anna Sołtysik-Piorunkiewicz, analysing web application security threats in the context of Industry 4.0.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "View publication on Springer",
+								href: "https://link.springer.com/chapter/10.1007/978-3-030-40417-8_8",
+							},
+						],
+					},
+					{
+						title: "Security threats spotted by QA Engineers. Cybersecurity testing based on TSH projects",
+						description:
+							"A practical article showing how QA engineers can identify security risks in real software projects and incorporate security testing into everyday QA work.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Read article",
+								href: "https://tsh.io/blog/cybersecurity-testing-owasp",
+							},
+						],
+					},
+					{
+						title: "OWASP Top 10 Privacy Risks – use these best practices to protect your clients",
+						description:
+							"A practical exploration of the OWASP Top 10 Privacy Risks, connecting privacy threats with concrete considerations for web applications and software development.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Read article",
+								href: "https://tsh.io/blog/owasp-top-10-privacy-risks",
+							},
+						],
+					},
+				],
 			},
 			{
 				title: "Academic teaching",
@@ -177,6 +257,44 @@ export const knowledgeSharing = {
 						value: "Project management, QA and application security",
 					},
 				],
+				evidenceLabel: "View teaching evidence",
+				evidenceCollapseLabel: "Hide teaching evidence",
+					evidence: [
+						{
+							title: "Project Management classes",
+							layout: "academic",
+							description:
+								"As part of my doctoral teaching practice, I guided student teams through a semester-long project developed incrementally during the classes. Their work included defining project goals, creating a WBS, planning schedules and analysing project risks.",
+							image:
+								knowledgeSharingEvidence.academic.projectManagement.projectGoalsImage,
+							alt:
+								"Teaching materials from Project Management classes showing project goals and a Work Breakdown Structure.",
+							linksAfterDescription: true,
+							links: [
+								{
+									label: "Profile at the University of Economics in Katowice",
+									href: knowledgeSharingEvidence.academic.owaspLecture.links.universityProfile,
+								},
+							],
+						},
+						{
+							title: "Guest lecture: Application security and OWASP",
+							layout: "academic",
+							description:
+								"I delivered the guest lecture “Alfabet bezpiecznej aplikacji i krytyczne zagrożenia cyfrowe – praktyczne zastosowania OWASP” as part of the Security Engineering course coordinated by Prof. UE Anna Sołtysik-Piorunkiewicz. The session used examples from QA and software projects to discuss critical application security risks and practical uses of OWASP.",
+							image:
+								knowledgeSharingEvidence.academic.owaspLecture.image,
+							alt:
+								"University of Economics in Katowice materials documenting my guest lecture on application security and practical uses of OWASP, including the lecture announcement and official thank-you.",
+							linksAfterDescription: true,
+							links: [
+								{
+									label: "My LinkedIn recap",
+									href: knowledgeSharingEvidence.academic.owaspLecture.links.linkedin,
+								},
+							],
+						},
+					],
 			},
 			{
 				title: "Community talks",

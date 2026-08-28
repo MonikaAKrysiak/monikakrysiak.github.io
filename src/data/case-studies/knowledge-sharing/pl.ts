@@ -150,6 +150,86 @@ export const knowledgeSharing = {
 						value: "Bezpieczeństwo i jakość w praktyce",
 					},
 				],
+				previewDescription:	"Wybrane pozycje z szerszego dorobku naukowego i branżowego.",
+				previewImage: knowledgeSharingEvidence.publications.overviewImage,
+				previewAlt: "Wybrane fizyczne publikacje naukowe i branżowe mojego autorstwa i współautorstwa.",
+				evidenceLabel: "Pokaż wybrane publikacje",
+				evidenceCollapseLabel: "Ukryj wybrane publikacje",
+
+				evidence: [
+					{
+						title: "Zastosowanie ontologii w budowie semantycznego Internetu oraz modelowaniu wiedzy o organizacji",
+						description:
+							"Moja pierwsza publikacja naukowa, rozwijająca temat pracy licencjackiej i współtworzona z dr Mariuszem Żytniewskim. Dotyczyła zastosowania ontologii w semantycznym Internecie oraz modelowaniu wiedzy o organizacji.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Zobacz publikację w BazEkon",
+								href: "https://bazekon.icm.edu.pl/bazekon/element/bwmeta1.element.ekon-element-000171395895",
+							},
+						],
+					},
+					{
+						title: "Wpływ zastosowań nowoczesnych technologii na atrakcyjność i popularność muzeów w Polsce",
+						description:
+							"Publikacja współautorstwa z Szymonem Głowanią poświęcona wykorzystaniu nowoczesnych technologii, w tym wirtualnych doświadczeń i komunikacji online, oraz ich wpływowi na atrakcyjność i popularność muzeów.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Zobacz publikację w BazEkon",
+								href: "https://bazekon.icm.edu.pl/bazekon/element/bwmeta1.element.ekon-element-000171495190",
+							},
+						],
+					},
+					{
+						title: "Metodyki zarządzania projektami IT i ich ryzykiem: przegląd i wykorzystanie",
+						description:
+							"Publikacja współautorstwa z Szymonem Głowanią poświęcona podejściom do zarządzania projektami IT oraz metodom wykorzystywanym w zarządzaniu ryzykiem projektowym.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Przeczytaj publikację",
+								href: "https://bibliotekanauki.pl/articles/591893.pdf",
+							},
+						],
+					},
+					{
+						title: "The Cyber Threats Analysis for Web Applications Security in Industry 4.0",
+						description:
+							"Publikacja naukowa współautorstwa z prof. UE Anną Sołtysik-Piorunkiewicz, analizująca zagrożenia bezpieczeństwa aplikacji webowych w kontekście Industry 4.0.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Zobacz publikację w Springer",
+								href: "https://link.springer.com/chapter/10.1007/978-3-030-40417-8_8",
+							},
+						],
+					},
+					{
+						title: "Security threats spotted by QA Engineers. Cybersecurity testing based on TSH projects",
+						description:
+							"Praktyczny artykuł pokazujący, w jaki sposób QA Engineer może identyfikować zagrożenia bezpieczeństwa w rzeczywistych projektach i włączać testy bezpieczeństwa do codziennej pracy QA.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Przeczytaj artykuł",
+								href: "https://tsh.io/blog/cybersecurity-testing-owasp",
+							},
+						],
+					},
+					{
+						title: "OWASP Top 10 Privacy Risks – use these best practices to protect your clients",
+						description:
+							"Praktyczne omówienie OWASP Top 10 Privacy Risks, łączące zagrożenia dla prywatności z konkretnymi aspektami projektowania i rozwijania aplikacji webowych.",
+						linksAfterDescription: true,
+						links: [
+							{
+								label: "Przeczytaj artykuł",
+								href: "https://tsh.io/blog/owasp-top-10-privacy-risks",
+							},
+						],
+					},
+				],
 			},
 			{
 				title: "Zajęcia akademickie",
@@ -178,6 +258,44 @@ export const knowledgeSharing = {
 							"Zarządzanie projektami, QA i bezpieczeństwo aplikacji",
 					},
 				],
+				evidenceLabel: "Pokaż materiały dydaktyczne",
+				evidenceCollapseLabel: "Ukryj materiały dydaktyczne",
+					evidence: [
+						{
+							title: "Ćwiczenia z Zarządzania Projektem",
+							layout: "academic",
+							description:
+								"W ramach praktyk doktoranckich prowadziłam zespoły studentów przez rozwijany przez cały semestr projekt. W kolejnych etapach określali cele projektu, tworzyli WBS, planowali harmonogram i analizowali ryzyka projektowe.",
+							image:
+								knowledgeSharingEvidence.academic.projectManagement.projectGoalsImage,
+							alt:
+								"Materiały dydaktyczne z ćwiczeń z Zarządzania Projektem pokazujące cele projektu zaliczeniowego i strukturę WBS.",
+							linksAfterDescription: true,
+							links: [
+								{
+									label: "Profil na Uniwersytecie Ekonomicznym w Katowicach",
+									href: knowledgeSharingEvidence.academic.owaspLecture.links.universityProfile,
+								},
+							],
+						},
+						{
+							title: "Wykład gościnny: bezpieczeństwo aplikacji i OWASP",
+							layout: "academic",
+							description:
+								"Poprowadziłam gościnny wykład „Alfabet bezpiecznej aplikacji i krytyczne zagrożenia cyfrowe – praktyczne zastosowania OWASP” w ramach przedmiotu Inżynieria bezpieczeństwa koordynowanego przez prof. UE Annę Sołtysik-Piorunkiewicz. Na przykładach z pracy w QA i projektach informatycznych omawiałam krytyczne zagrożenia dla aplikacji oraz praktyczne wykorzystanie OWASP.",
+							image:
+								knowledgeSharingEvidence.academic.owaspLecture.image,
+							alt:
+								"Materiały Uniwersytetu Ekonomicznego w Katowicach dokumentujące mój gościnny wykład o bezpieczeństwie aplikacji i praktycznym wykorzystaniu OWASP: zapowiedź wykładu oraz oficjalne podziękowanie.",
+							linksAfterDescription: true,
+							links: [
+								{
+									label: "Moje podsumowanie na LinkedIn",
+									href: knowledgeSharingEvidence.academic.owaspLecture.links.linkedin,
+								},
+							],
+						},
+					],
 			},
 			{
 				title: "Wystąpienia dla społeczności",

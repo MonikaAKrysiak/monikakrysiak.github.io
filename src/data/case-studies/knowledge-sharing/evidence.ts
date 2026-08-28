@@ -3,8 +3,30 @@ import owaspPolandDay2023Image from "../../../assets/case-studies/knowledge-shar
 import owaspPolandDay2023SpeakerImage from "../../../assets/case-studies/knowledge-sharing-owasp-poland-day-2023-speaker.png";
 import owaspKrakowEventImage from "../../../assets/case-studies/knowledge-sharing-owasp-krakow-event.png";
 import owaspKrakowPresentationImage from "../../../assets/case-studies/knowledge-sharing-owasp-krakow-presentation.png";
+import publicationsOverviewImage from "../../../assets/case-studies/knowledge-sharing-publications-overview.jpg";
+import academicProjectGoalsImage from "../../../assets/case-studies/knowledge-sharing-academic-project-goals.png";
+import academicOwaspLectureImage from "../../../assets/case-studies/knowledge-sharing-academic-owasp-lecture.png";
 
 export const knowledgeSharingEvidence = {
+        publications: {
+        overviewImage: publicationsOverviewImage,
+    },
+    academic: {
+        projectManagement: {
+            projectGoalsImage: academicProjectGoalsImage,
+        },
+        owaspLecture: {
+            image: academicOwaspLectureImage,
+            links: {
+                universityProfile:
+                    "https://www.ue.katowice.pl/pracownicy/wydzial-informatyki-i-komunikacji/katedra-badan-operacyjnych/monika-krysiak.html",
+                linkedin:
+                    "https://www.linkedin.com/posts/monika-krysiak_chcia%C5%82am-bardzo-podzi%C4%99kowa%C4%87-pani-profesor-activity-7155960416077004800-soaw?utm_source=share&utm_medium=member_desktop&rcm=ACoAABcvFK4BGUjj3r8RDOCh-xB42SmujxCx2UU",
+            },
+        },
+    },
+
+
     uszanowanko: {
         eventImage: uszanowankoEventImage,
         videoSrc: "/videos/work/uszanowanko-programowanko.mp4",

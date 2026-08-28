@@ -18,7 +18,9 @@ export interface KnowledgeSharingEvidenceItem {
     secondaryImageAlt?: string;
     videoSrc?: string;
     links?: KnowledgeSharingEvidenceLink[];
+    linksAfterDescription?: boolean;
     secondaryImageLarge?: boolean;
+    layout?: "default" | "academic";
 }
 
 export interface KnowledgeSharingPracticalExample {
@@ -30,7 +32,12 @@ export interface KnowledgeSharingPracticalExample {
         label: string;
         value: string;
     }[];
+    previewImage?: ImageMetadata;
+    previewAlt?: string;
+    previewDescription?: string;
     evidence?: KnowledgeSharingEvidenceItem[];
+    evidenceLabel?: string;
+    evidenceCollapseLabel?: string;
 }
 
 export const getKnowledgeSharing = createCaseStudyGetter(en, pl);
