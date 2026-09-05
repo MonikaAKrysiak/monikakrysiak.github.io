@@ -1207,6 +1207,10 @@ body {
 	gap: var(--space-xl);
 }
 
+.knowledge-sharing-example > .case-study-source {
+	margin-top: calc(-1 * var(--space-md));
+}
+
 .knowledge-sharing-example-main {
 	display: grid;
 	gap: var(--space-lg);
@@ -1555,10 +1559,12 @@ body {
 	}
 
 	.knowledge-sharing-evidence-item-video {
-        grid-template-areas:
-                "title title"
-                "side description"
-                "side links";
+		grid-template-areas:
+			"title title"
+			"side description"
+			"side links";
+
+		grid-template-rows: auto auto 1fr;
 	}
 
 	.knowledge-sharing-evidence-title {
@@ -1579,7 +1585,8 @@ body {
 	}
 
 	.knowledge-sharing-evidence-video-links {
-        grid-area: links;
+		grid-area: links;
+		align-self: start;
 	}
 
 	.knowledge-sharing-evidence-secondary-image {
