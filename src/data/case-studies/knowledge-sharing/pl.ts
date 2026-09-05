@@ -96,31 +96,89 @@ export const knowledgeSharing = {
 						value: "SQL, JQL i bazy danych",
 					},
 				],
+
+				evidenceLabel: "Pokaż materiały z kursu",
+				evidenceCollapseLabel: "Ukryj materiały z kursu",
+
+				evidence: [
+				{
+					title: "Fragment kursu: filtrowanie danych",
+					description:
+    					"Krótki fragment jednej z ponad 20 lekcji SQL i JQL przygotowanych w ramach kursu. Moduł obejmował również instrukcję konfiguracji środowiska szkoleniowego Beaver, zadania domowe oraz pytania z teorii. Filtrowanie danych omawiałam na dedykowanej bazie szkoleniowej, a przykłady osadzałam w praktycznych scenariuszach QA, dzięki czemu uczestnicy mogli uczyć się pracy z danymi w kontekście zbliżonym do codziennych zadań testera.",
+					videoSrc: knowledgeSharingEvidence.sqlAndJql.videoSrc,
+					linksAfterDescription: true,
+					links: [
+						{
+							label: "Zobacz bazę szkoleniową",
+							href: knowledgeSharingEvidence.sqlAndJql.links.trainingDatabase,
+						},
+						{
+							label: "Zobacz zapowiedź szkolenia na LinkedIn",
+							href: knowledgeSharingEvidence.sqlAndJql.links.linkedinAnnouncement,
+						},
+						{
+							label: "Zobacz podsumowanie szkolenia na LinkedIn",
+							href: knowledgeSharingEvidence.sqlAndJql.links.linkedinRecap,
+						},
+					],
+				},
+			],
 			},
 			{
-				title: "Materiały warsztatowe",
+    			title: "Praktyczne materiały edukacyjne",
 
 				context:
-					"Warsztaty techniczne musiały wspierać osoby o różnym poziomie doświadczenia, a jednocześnie pozostać praktyczne i angażujące.",
+					"Zagadnienia techniczne i związane z bezpieczeństwem często wymagały wyjaśnienia osobom o różnym poziomie doświadczenia oraz w formie, z której można było korzystać również po zakończeniu spotkania.",
 
 				approach:
-					"Przygotowywałam prezentacje, ćwiczenia, checklisty i przykłady, które prowadziły uczestników przez temat oraz zachęcały do aktywnej dyskusji zamiast biernego słuchania.",
+					"Tworzyłam praktyczne materiały edukacyjne łączące krótkie wyjaśnienia z przykładami, ćwiczeniami, checklistami i instrukcjami krok po kroku. Poziom szczegółowości i formę dopasowywałam do odbiorców oraz omawianego tematu.",
 
 				outcome:
-					"Materiały porządkowały proces nauki i pozostawały użytecznym źródłem, do którego uczestnicy mogli wracać po zakończeniu spotkania.",
+					"Materiały ułatwiały poznawanie złożonych tematów w praktyce i pozostawały źródłem wiedzy, do którego można było wracać w razie potrzeby.",
 
 				meta: [
 					{
 						label: "Forma",
-						value: "Warsztaty i sesje wewnętrzne",
+						value: "Poradniki, ćwiczenia i materiały pomocnicze",
 					},
 					{
 						label: "Odbiorcy",
 						value: "Osoby o różnym poziomie doświadczenia",
 					},
 					{
-						label: "Materiały",
-						value: "Prezentacje, ćwiczenia i checklisty",
+						label: "Tematy",
+						value: "Bezpieczeństwo aplikacji i świadomość bezpieczeństwa",
+					},
+				],
+
+				resourceLink: {
+					label: "Zobacz przykładowe materiały w Security Knowledge Base",
+					href: "/pl/work/security-knowledge-base#example-resources",
+				},
+
+				evidenceLabel: "Pokaż przykładowe materiały",
+				evidenceCollapseLabel: "Ukryj przykładowe materiały",
+
+				evidence: [
+					{
+						title: "Materiał edukacyjny AppSec krok po kroku",
+						layout: "learning-resource",
+						description:
+							"Materiał edukacyjny omawiający path traversal na przykładzie praktycznych laboratoriów PortSwigger Academy. Łączył krótki opis podatności z instrukcjami wykonania ćwiczeń, dodatkowymi notatkami oraz przykładami pokazującymi, dlaczego pozornie proste zabezpieczenia nadal mogą zostać ominięte.",
+						image:
+							knowledgeSharingEvidence.workshopMaterials.pathTraversalImage,
+						alt:
+							"Materiał edukacyjny o path traversal zawierający wyjaśnienia, instrukcje do laboratoriów PortSwigger Academy oraz przykład obejścia filtrowania ścieżki.",
+					},
+					{
+						title: "Materiał zwiększający świadomość bezpieczeństwa",
+						layout: "learning-resource",
+						description:
+							"Praktyczny materiał dotyczący bezpiecznej pracy poza biurem. Przekładał zasady bezpieczeństwa na codzienne działania związane z otoczeniem, urządzeniami, hasłami oraz ochroną danych projektowych i klientów.",
+						image:
+							knowledgeSharingEvidence.workshopMaterials.remoteWorkSecurityImage,
+						alt:
+							"Materiał o bezpiecznej pracy zdalnej zawierający praktyczne wskazówki dotyczące ochrony ekranu, urządzeń, haseł oraz danych projektowych i klientów.",
 					},
 				],
 			},

@@ -6,11 +6,31 @@ import owaspKrakowPresentationImage from "../../../assets/case-studies/knowledge
 import publicationsOverviewImage from "../../../assets/case-studies/knowledge-sharing-publications-overview.jpg";
 import academicProjectGoalsImage from "../../../assets/case-studies/knowledge-sharing-academic-project-goals.png";
 import academicOwaspLectureImage from "../../../assets/case-studies/knowledge-sharing-academic-owasp-lecture.png";
+import pathTraversalLearningMaterial from "../../../assets/case-studies/knowledge-sharing-path-traversal-learning-material.png";
+import remoteWorkSecurityMaterial from "../../../assets/case-studies/knowledge-sharing-remote-work-security-material.png";
 
 export const knowledgeSharingEvidence = {
-        publications: {
+    workshopMaterials: {
+        pathTraversalImage: pathTraversalLearningMaterial,
+        remoteWorkSecurityImage: remoteWorkSecurityMaterial,
+    },
+
+    publications: {
         overviewImage: publicationsOverviewImage,
     },
+
+    sqlAndJql: {
+        videoSrc: "/videos/work/knowledge-sharing-sql-filtering-data.mp4",
+        links: {
+            trainingDatabase:
+                "https://github.com/MonikaAKrysiak/Kurs-SQL",
+            linkedinAnnouncement:
+                "https://www.linkedin.com/feed/update/urn:li:activity:7056884635229724672",
+            linkedinRecap:
+                "https://www.linkedin.com/feed/update/urn:li:activity:7062101194457907200",
+        },
+    },
+
     academic: {
         projectManagement: {
             projectGoalsImage: academicProjectGoalsImage,

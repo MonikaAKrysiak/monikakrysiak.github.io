@@ -1537,6 +1537,30 @@ body {
 			"image side";
 	}
 
+	.knowledge-sharing-evidence-list-learning-resources {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+	}
+
+	.knowledge-sharing-evidence-item-learning-resource {
+			grid-template-columns: minmax(0, 1fr);
+			grid-template-areas:
+					"title"
+					"description"
+					"image"
+					"side";
+
+			padding-bottom: 0;
+			border-bottom: 0;
+	}
+
+	.knowledge-sharing-evidence-item-video {
+        grid-template-areas:
+                "title title"
+                "side description"
+                "side links";
+	}
+
 	.knowledge-sharing-evidence-title {
 		grid-area: title;
 	}
@@ -1552,6 +1576,10 @@ body {
 	.knowledge-sharing-evidence-side {
 		grid-area: side;
 		align-self: start;
+	}
+
+	.knowledge-sharing-evidence-video-links {
+        grid-area: links;
 	}
 
 	.knowledge-sharing-evidence-secondary-image {
