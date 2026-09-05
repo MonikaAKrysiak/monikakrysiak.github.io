@@ -96,31 +96,88 @@ export const knowledgeSharing = {
 						value: "SQL, JQL and databases",
 					},
 				],
+
+				evidenceLabel: "View course evidence",
+				evidenceCollapseLabel: "Hide course evidence",
+
+				evidence: [
+				{
+					title: "Course excerpt: Filtering data",
+					description:
+   				"A short excerpt from one of more than 20 SQL and JQL lessons prepared for the course. The module also included setup instructions for the Beaver training environment, homework assignments and theory questions. I introduced data filtering using a dedicated training database and built the examples around practical QA scenarios, so participants could learn by working with data in a context similar to everyday testing tasks.",
+					videoSrc: knowledgeSharingEvidence.sqlAndJql.videoSrc,
+					linksAfterDescription: true,
+					links: [
+						{
+							label: "View training database",
+							href: knowledgeSharingEvidence.sqlAndJql.links.trainingDatabase,
+						},
+						{
+							label: "View training announcement on LinkedIn",
+							href: knowledgeSharingEvidence.sqlAndJql.links.linkedinAnnouncement,
+						},
+						{
+							label: "View training recap on LinkedIn",
+							href: knowledgeSharingEvidence.sqlAndJql.links.linkedinRecap,
+						},
+					],
+				},
+			],
 			},
 			{
-				title: "Workshop materials",
+				title: "Practical learning resources",
 
 				context:
-					"Technical workshops needed to support participants with different levels of experience while remaining practical and engaging.",
+					"Technical and security topics often needed to be explained to people with different levels of experience and in a form they could use beyond a single session.",
 
 				approach:
-					"I prepared slide decks, exercises, checklists and supporting examples that guided participants through the topic and encouraged active discussion rather than passive listening.",
+					"I created practical learning resources that combined concise explanations with examples, exercises, checklists and step-by-step guidance. I adapted the level of detail and format to the audience and the topic.",
 
 				outcome:
-					"The materials gave participants a clear learning structure and resources they could return to after the session.",
+					"The materials made complex topics easier to explore in practice and provided reusable resources that people could return to when they needed them.",
 
 				meta: [
 					{
 						label: "Format",
-						value: "Workshops and internal sessions",
+						value: "Guides, exercises and supporting materials",
 					},
 					{
 						label: "Audience",
-						value: "Participants with mixed experience levels",
+						value: "People with different levels of experience",
 					},
 					{
-						label: "Materials",
-						value: "Slides, exercises and checklists",
+						label: "Topics",
+						value: "Application security and security awareness",
+					},
+				],
+
+				resourceLink: {
+					label: "View example resources in the Security Knowledge Base",
+					href: "/en/work/security-knowledge-base#example-resources",
+				},
+				evidenceLabel: "View learning resource examples",
+				evidenceCollapseLabel: "Hide learning resource examples",
+
+				evidence: [
+					{
+						title: "Step-by-step application security learning material",
+						layout: "learning-resource",
+						description:
+							"A learning resource explaining path traversal through practical PortSwigger Academy labs. It combined a short vulnerability overview with hands-on instructions, additional notes and examples showing why seemingly simple mitigations can still be bypassed.",
+						image:
+							knowledgeSharingEvidence.workshopMaterials.pathTraversalImage,
+						alt:
+							"Learning material about path traversal showing explanations, PortSwigger Academy lab instructions and an example of bypassing path traversal filtering.",
+					},
+					{
+						title: "Security awareness material",
+						layout: "learning-resource",
+						description:
+							"A practical resource about working securely outside the office. It translated security principles into everyday actions related to physical surroundings, devices, passwords and handling project or client data.",
+						image:
+							knowledgeSharingEvidence.workshopMaterials.remoteWorkSecurityImage,
+						alt:
+							"Security awareness material about secure remote work, with practical guidance on protecting screens, devices, passwords and project or client data.",
 					},
 				],
 			},
