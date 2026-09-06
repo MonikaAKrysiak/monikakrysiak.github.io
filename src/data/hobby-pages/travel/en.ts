@@ -95,6 +95,20 @@ export const en: TravelPageContent = {
 				"That journey reminded us that a route doesn't need famous attractions or spectacular views to matter. Sometimes the greatest luxury is simply the quiet, being close to each other, and having a few uninterrupted days together.",
 			],
 		},
+		{
+			year: "2026",
+			title: "Romania",
+			summary: "The most spontaneous of our carefully planned trips.",
+			paragraphs: [
+				"Our cycling plans had to change this year, so instead of another bikepacking trip, we flew to Romania. I had planned the trip carefully, with train and attraction tickets booked in advance. Once we got there, however, we kept finding reasons to change those plans. It was hardly a less active holiday either - we still walked an average of around sixteen kilometres every day.",
+
+				"The first change came just after we arrived in Brașov. The holiday celebrated that day in Poland turned out to be a public holiday in Romania too, so most of the attractions we had planned to visit were closed. Instead, we went to the zoo, discovered an organ concert taking place in a church, and reached Mount Tâmpa late enough to have dinner at sunset overlooking Brașov and the surrounding area.",
+
+				"In Sinaia, we finished visiting Peleș Castle earlier than expected, which reminded me of the cable car I had spotted on the way. We managed to join an earlier ticket group and walked towards the cable car in around thirty-degree heat. We went first to Cota 1400 and then to Cota 2000, where the temperature was only fourteen degrees. We were freezing, but the views were absolutely worth it.",
+
+				"Our trip to Bran followed a similar pattern. We had planned to take the ten o'clock bus, but after an early breakfast decided to try for the nine o'clock one instead. Our first Uber cancelled, and as the next one reached the bus stop, the bus driver was already starting the engine. We got on at the very last moment. Arriving early gave us time to take photos before the attractions opened and relax in the shade on the grass at the open-air museum while waiting for the castle to open.",
+			],
+		},
 	],
 
 	quote:
@@ -104,11 +118,6 @@ export const en: TravelPageContent = {
 
 	lookingAhead: [
 		{
-			title: "Romania",
-			description:
-				"Our cycling plans had to change this year, so we decided to fly somewhere new and see what Romania has to offer. Will it be worth it? We'll have to wait and see.",
-		},
-		{
 			title: "Another anniversary",
 			description:
 				"The way we travel may change, but we already know we want to keep celebrating our anniversary by discovering something new together.",
@@ -117,6 +126,11 @@ export const en: TravelPageContent = {
 			title: "Still on our map",
 			description:
 				"There are still plenty of regions, rivers, trails, and small places in Poland waiting for us to discover at our own pace.",
+		},
+		{
+			title: "Szczecin Lagoon and R10",
+			description:
+				"Next year, we plan to get back on our bikes and ride a loop around Szczecin Lagoon, following the R10 route to Kołobrzeg along the way before returning to Szczecin on a new cycling route.",
 		},
 	],
 
@@ -146,6 +160,12 @@ export const en: TravelPageContent = {
 		},
 		{
 			alt: "Three horses standing together by the stable",
+		},
+		{
+			alt: "Mountain panorama seen from Cota 2000 in Romania",
+		},
+		{
+			alt: "Bran Castle seen behind a stone church",
 		},
 	],
 };

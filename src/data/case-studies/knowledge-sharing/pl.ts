@@ -164,7 +164,7 @@ export const knowledgeSharing = {
 						title: "Materiał edukacyjny AppSec krok po kroku",
 						layout: "learning-resource",
 						description:
-							"Materiał edukacyjny omawiający path traversal na przykładzie praktycznych laboratoriów PortSwigger Academy. Łączył krótki opis podatności z instrukcjami wykonania ćwiczeń, dodatkowymi notatkami oraz przykładami pokazującymi, dlaczego pozornie proste zabezpieczenia nadal mogą zostać ominięte.",
+							"Krótki fragment jednej z ponad 20 lekcji SQL i JQL, które przygotowałam w ramach kursu. Moduł oparłam na praktycznych ćwiczeniach z wykorzystaniem dedykowanej bazy szkoleniowej, a przykłady tworzyłam na podstawie scenariuszy QA zamiast oderwanych od kontekstu zapytań. Dzięki temu uczestnicy mogli ćwiczyć filtrowanie danych w sytuacjach zbliżonych do codziennej pracy testera. Moduł obejmował również instrukcję konfiguracji środowiska szkoleniowego Beaver, zadania domowe oraz pytania z teorii.",
 						image:
 							knowledgeSharingEvidence.workshopMaterials.pathTraversalImage,
 						alt:
