@@ -95,6 +95,20 @@ export const pl: TravelPageContent = {
 				"Ta podróż przypomniała nam, że trasa nie musi oferować słynnych atrakcji ani spektakularnych widoków, żeby była ważna. Czasem największym luksusem są cisza, bliskość i kilka nieprzerwanych dni spędzonych razem.",
 			],
 		},
+		{
+			year: "2026",
+			title: "Rumunia",
+			summary: "Najbardziej spontaniczna z naszych zaplanowanych podróży.",
+			paragraphs: [
+				"Tegoroczne plany rowerowe musiały się zmienić, dlatego zamiast kolejnej wyprawy bikepackingowej polecieliśmy do Rumunii. Wyjazd miałam dokładnie zaplanowany, z wcześniej kupionymi biletami na pociągi i atrakcje. Na miejscu jednak regularnie znajdowaliśmy powody, żeby te plany zmieniać. Mniej aktywnie też nie było - każdego dnia robiliśmy pieszo średnio około szesnastu kilometrów.",
+
+				"Pierwsza zmiana czekała na nas już po przylocie do Braszowa. Okazało się, że święto obchodzone tego dnia w Polsce jest również dniem wolnym w Rumunii, więc większość zaplanowanych atrakcji była zamknięta. Zamiast zwiedzania miasta pojechaliśmy do zoo, trafiliśmy na koncert organowy w kościele, a na górę Tâmpa wjechaliśmy na tyle późno, że mogliśmy zjeść kolację przy zachodzie słońca z widokiem na Braszów i okolice.",
+
+				"W Sinaia zwiedziliśmy Pałac Peleș szybciej, niż się spodziewałam, więc przypomniałam sobie o kolejce linowej, którą widziałam po drodze. Udało nam się dołączyć do wcześniejszej grupy biletowej i przy około trzydziestu stopniach ruszyliśmy pieszo w stronę kolejki. Wjechaliśmy najpierw na Cota 1400, a później na Cota 2000, gdzie czekało na nas zaledwie czternaście stopni. Zmarzliśmy strasznie, ale widoki zdecydowanie były tego warte.",
+
+				"Podobnie było z wyjazdem do Bran. Planowaliśmy autobus o dziesiątej, ale po wcześniejszym śniadaniu postanowiliśmy spróbować zdążyć na ten o dziewiątej. Pierwszy Uber odwołał przejazd, a gdy kolejny podjeżdżał na przystanek, kierowca autobusu właśnie włączał silnik. Wsiedliśmy dosłownie w ostatniej chwili. Dzięki temu dotarliśmy wcześniej, zrobiliśmy zdjęcia przed otwarciem atrakcji i odpoczęliśmy w cieniu na trawie w skansenie, czekając na otwarcie zamku.",
+			],
+		},
 	],
 
 	quote: "Cel zmienia się każdego roku. Tradycja pozostaje ta sama.",
@@ -102,11 +116,6 @@ export const pl: TravelPageContent = {
 	lookingAheadTitle: "Co dalej?",
 
 	lookingAhead: [
-		{
-			title: "Rumunia",
-			description:
-				"Tegoroczne plany rowerowe musiały się zmienić, dlatego postanowiliśmy polecieć w nowe miejsce i sprawdzić, co ma do zaoferowania Rumunia. Czy będzie warto? Tego dopiero się dowiemy.",
-		},
 		{
 			title: "Kolejna rocznica",
 			description:
@@ -116,6 +125,11 @@ export const pl: TravelPageContent = {
 			title: "Nadal na naszej mapie",
 			description:
 				"W Polsce wciąż czekają na nas kolejne regiony, rzeki, szlaki i niewielkie miejsca, które chcemy poznawać we własnym tempie.",
+		},
+		{
+			title: "Zalew Szczeciński i R10",
+			description:
+				"W przyszłym roku planujemy wrócić do rowerów i przejechać pętlę wokół Zalewu Szczecińskiego, zahaczając po drodze o trasę R10 do Kołobrzegu, a następnie wracając nową trasą rowerową do Szczecina.",
 		},
 	],
 
@@ -145,6 +159,12 @@ export const pl: TravelPageContent = {
 		},
 		{
 			alt: "Trzy konie stojące razem przy stajni",
+		},
+		{
+			alt: "Panorama gór widziana z Cota 2000 w Rumunii",
+		},
+		{
+			alt: "Zamek Bran widziany za kamienną cerkwią",
 		},
 	],
 };

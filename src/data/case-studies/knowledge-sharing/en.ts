@@ -104,7 +104,7 @@ export const knowledgeSharing = {
 				{
 					title: "Course excerpt: Filtering data",
 					description:
-   				"A short excerpt from one of more than 20 SQL and JQL lessons prepared for the course. The module also included setup instructions for the Beaver training environment, homework assignments and theory questions. I introduced data filtering using a dedicated training database and built the examples around practical QA scenarios, so participants could learn by working with data in a context similar to everyday testing tasks.",
+   						"A short excerpt from one of more than 20 SQL and JQL lessons I prepared for the course. I designed the module around hands-on exercises using a dedicated training database, with examples based on practical QA scenarios rather than abstract queries. Participants could practise data filtering in a context similar to everyday testing tasks. The module also included setup instructions for the Beaver training environment, homework assignments and theory questions.",
 					videoSrc: knowledgeSharingEvidence.sqlAndJql.videoSrc,
 					linksAfterDescription: true,
 					links: [
